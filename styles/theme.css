@@ -1,0 +1,133 @@
+/* Theme System */
+[data-theme="dark"] {
+    --bg-primary: #121212;
+    --bg-secondary: #1E1E1E;
+    --bg-tertiary: #2D2D2D;
+    --bg-overlay: rgba(0, 0, 0, 0.8);
+    
+    --text-primary: #FFFFFF;
+    --text-secondary: #B0B0B0;
+    --text-tertiary: #808080;
+    
+    --border-color: #333333;
+    --border-light: #444444;
+}
+
+[data-theme="light"] {
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #F5F5F5;
+    --bg-tertiary: #E0E0E0;
+    --bg-overlay: rgba(255, 255, 255, 0.8);
+    
+    --text-primary: #121212;
+    --text-secondary: #666666;
+    --text-tertiary: #999999;
+    
+    --border-color: #DDDDDD;
+    --border-light: #CCCCCC;
+    
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Theme Toggle */
+.theme-toggle {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 100;
+}
+
+.theme-toggle-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    font-size: var(--font-size-lg);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    transition: all var(--transition);
+}
+
+.theme-toggle-btn:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Theme-specific adjustments */
+[data-theme="light"] .warning-banner,
+[data-theme="light"] .warning-note {
+    background-color: rgba(243, 156, 18, 0.15);
+    border-color: rgba(243, 156, 18, 0.4);
+}
+
+[data-theme="light"] .security-notice {
+    background-color: rgba(74, 144, 226, 0.1);
+    border: 1px solid rgba(74, 144, 226, 0.2);
+}
+
+[data-theme="light"] .asset-item:hover,
+[data-theme="light"] .transaction-item:hover {
+    background-color: var(--bg-tertiary);
+}
+
+[data-theme="light"] .chain-tab.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+[data-theme="light"] .address-display {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .transaction-details {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .qr-container canvas {
+    border: 1px solid var(--border-color);
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+@media (prefers-contrast: high) {
+    :root {
+        --border-color: #000000;
+        --text-secondary: #000000;
+    }
+    
+    [data-theme="dark"] {
+        --border-color: #FFFFFF;
+        --text-secondary: #FFFFFF;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .screen:not(.active) {
+        display: none !important;
+    }
+    
+    .bottom-nav,
+    .header-actions,
+    button {
+        display: none !important;
+    }
+    
+    body {
+        background-color: white !important;
+        color: black !important;
+    }
+}
