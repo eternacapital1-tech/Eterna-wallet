@@ -1,0 +1,68 @@
+{
+  "tokens": {
+    "ethereum": [
+      {
+        "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 6,
+        "logoURI": "https://assets.coingecko.com/coins/images/6319/large/USD_Coin_icon.png"
+      },
+      {
+        "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+        "symbol": "USDT",
+        "name": "Tether USD",
+        "decimals": 6,
+        "logoURI": "https://assets.coingecko.com/coins/images/325/large/Tether.png"
+      },
+      {
+        "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+        "symbol": "DAI",
+        "name": "Dai Stablecoin",
+        "decimals": 18,
+        "logoURI": "https://assets.coingecko.com/coins/images/9956/large/4943.png"
+      }
+    ],
+    "bsc": [
+      {
+        "address": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+        "symbol": "BUSD",
+        "name": "Binance USD",
+        "decimals": 18,
+        "logoURI": "https://assets.coingecko.com/coins/images/9576/large/BUSD.png"
+      },
+      {
+        "address": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18,
+        "logoURI": "https://assets.coingecko.com/coins/images/6319/large/USD_Coin_icon.png"
+      }
+    ],
+    "polygon": [
+      {
+        "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 6,
+        "logoURI": "https://assets.coingecko.com/coins/images/6319/large/USD_Coin_icon.png"
+      },
+      {
+        "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+        "symbol": "USDT",
+        "name": "Tether USD",
+        "decimals": 6,
+        "logoURI": "https://assets.coingecko.com/coins/images/325/large/Tether.png"
+      }
+    ],
+    "tron": [
+      {
+        "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+        "symbol": "USDT",
+        "name": "Tether USD",
+        "decimals": 6,
+        "logoURI": "https://assets.coingecko.com/coins/images/325/large/Tether.png"
+      }
+    ]
+  }
+}
